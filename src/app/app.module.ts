@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from "@angular/forms"
+
 //firebase
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
@@ -32,6 +34,7 @@ const routes:Route[]=[
   
 
 ];
+export const routing = RouterModule.forRoot(routes);
 
 
 @NgModule({
@@ -51,7 +54,8 @@ const routes:Route[]=[
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
     AngularFirestoreModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
   providers: [],  
   bootstrap: [AppComponent]

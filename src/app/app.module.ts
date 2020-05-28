@@ -9,6 +9,7 @@ import { FormsModule } from "@angular/forms"
 //firebase
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFireAuthModule } from "@angular/fire/auth";
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 
@@ -20,6 +21,8 @@ import { CapitalrelacionalComponent } from './capitalrelacional/capitalrelaciona
 import { PaginaprincipalComponent } from './paginaprincipal/paginaprincipal.component';
 import { RegistroComponent } from './registro/registro.component';
 import { InformacionsectoresComponent } from './informacionsectores/informacionsectores.component';
+
+
 
 const routes:Route[]=[
 {path: 'login',component: LoginComponent},

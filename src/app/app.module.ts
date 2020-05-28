@@ -56,11 +56,13 @@ export const routing = RouterModule.forRoot(routes);
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
+    AngularFireAuthModule,
     AngularFirestoreModule,
     RouterModule.forRoot(routes),
     FormsModule
   ],
-  providers: [],  
+  
+  providers: [AppComponent],  
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -17,16 +17,19 @@ import { CapitalhumanoComponent } from './capitalhumano/capitalhumano.component'
 import { CapitalrelacionalComponent } from './capitalrelacional/capitalrelacional.component';
 import { PaginaprincipalComponent } from './paginaprincipal/paginaprincipal.component';
 import { RegistroComponent } from './registro/registro.component';
+import { InformacionsectoresComponent } from './informacionsectores/informacionsectores.component';
 
 const routes:Route[]=[
 {path: 'login',component: LoginComponent},
   {path: 'quienessomos',component: QuienessomosComponent},
   {path: 'capitalhumano',component: CapitalhumanoComponent},
   {path: 'capitalrelacional',component: CapitalrelacionalComponent},
+  {path: 'sectores',component: InformacionsectoresComponent},
   {path: 'paginaprincipal',component: PaginaprincipalComponent},
-  { path: '', component: LoginComponent, pathMatch: 'full' },
-  { path: '**', redirectTo: '/', pathMatch: 'full'  },
-  {path: 'componente',component: RegistroComponent}
+  {path: 'registro',component: RegistroComponent},
+  {path: '', component: LoginComponent, pathMatch: 'full' },
+  {path: '**', redirectTo: '/', pathMatch: 'full'  },
+  
 
 ];
 
@@ -39,7 +42,8 @@ const routes:Route[]=[
     CapitalhumanoComponent,
     CapitalrelacionalComponent,
     PaginaprincipalComponent,
-    RegistroComponent
+    RegistroComponent,
+    InformacionsectoresComponent
   ],
   imports: [
     BrowserModule,

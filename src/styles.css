@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+/* FORMULARIOS */
 
 * {
     box-sizing: border-box;
@@ -83,7 +83,7 @@ p{
 
 
 
-
+/* PÁGINAS */
 
 
 
@@ -176,6 +176,7 @@ main .sobre-nosotros{
 }
 .contenedor-sobre-nosotros{
     display: flex;
+    
     justify-content: space-evenly;
 }
 

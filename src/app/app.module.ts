@@ -22,6 +22,8 @@ import { PaginaprincipalComponent } from './paginaprincipal/paginaprincipal.comp
 import { RegistroComponent } from './registro/registro.component';
 import { InformacionsectoresComponent } from './informacionsectores/informacionsectores.component';
 
+// Auth service
+import { AuthService } from "./shared/services/authentication.service";
 
 
 const routes:Route[]=[
@@ -62,7 +64,7 @@ export const routing = RouterModule.forRoot(routes);
     FormsModule
   ],
   
-  providers: [AppComponent],  
+  providers: [AppComponent, AuthService],  
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,14 +1,5 @@
-<!--
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background: url(../src/assets/img/fondo2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
 
-}
--->
-<div class="login">
+<div class="login authBlock">
 
     <form class="formulario custom-form" method="post">
 
@@ -19,22 +10,25 @@ body {
         
         
             
-            <div class="input-contenedor">
+            <div class="input-contenedor formGroup">
                 <i class="fas fa-envelope icon"></i>
-                <input type="email"[(ngModel)]="email" name="email" placeholder="Correo Electronico" required="required">
+                <input type="email" class="formControl" name="email" placeholder="Correo Electrónico..." #userName required>
             
             </div>
             
-            <div class="input-contenedor">
+            <div class="input-contenedor formGroup">
                 <i class="fas fa-key icon"></i>
-                <input type="password" [(ngModel)]="password" name="password" placeholder="Contraseña" required="required">
+                <input type="password" class="formControl" name="password" placeholder="Contraseña..." #userPassword required>
             
             </div>
             
-                <input type="submit" value="Login" (click)="login()" class="button">
+            <div class="formGroup">
+                <input type="submit" value="Login" (click)="login()" class="button" (click)="authService.SignIn(userName.value, userPassword.value)">
                 <p> <br> Universidad Cooperativa de Colombia</p>
+            </div>
                 
                 
+            
         </div>
     </form>
         

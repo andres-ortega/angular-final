@@ -1,5 +1,5 @@
 import { Injectable, NgZone } from '@angular/core';
-import { User } from "../services/user";
+import { User } from "./user";
 import { auth } from 'firebase/app';
 import { AngularFireAuth } from "@angular/fire/auth";
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
@@ -18,8 +18,8 @@ export class AuthService {
     public router: Router,  
     public ngZone: NgZone // NgZone service to remove outside scope warning
   ) {    
-    /* Saving user data in localstorage when 
-    logged in and setting up null when logged out */
+    
+    /* guarda los datos login */
     this.afAuth.authState.subscribe(user => {
       if (user) {
         this.userData = user;

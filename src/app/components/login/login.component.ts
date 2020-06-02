@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from "../shared/services/authentication.service";
+import { AuthService } from "../../services/authentication.service";
 
 /*nombre del componente = selector*/
 @Component({

@@ -14,16 +14,16 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 
 import { Route, RouterModule } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { QuienessomosComponent } from './quienessomos/quienessomos.component';
-import { CapitalhumanoComponent } from './capitalhumano/capitalhumano.component';
-import { CapitalrelacionalComponent } from './capitalrelacional/capitalrelacional.component';
-import { PaginaprincipalComponent } from './paginaprincipal/paginaprincipal.component';
-import { RegistroComponent } from './registro/registro.component';
-import { InformacionsectoresComponent } from './informacionsectores/informacionsectores.component';
+import { LoginComponent } from './components/login/login.component';
+import { QuienessomosComponent } from './components/quienessomos/quienessomos.component';
+import { CapitalhumanoComponent } from './components/capitalhumano/capitalhumano.component';
+import { CapitalrelacionalComponent } from './components/capitalrelacional/capitalrelacional.component';
+import { PaginaprincipalComponent } from './components/paginaprincipal/paginaprincipal.component';
+import { RegistroComponent } from './components/registro/registro.component';
+import { InformacionsectoresComponent } from './components/informacionsectores/informacionsectores.component';
 
 // Auth service
-import { AuthService } from "./shared/services/authentication.service";
+import { AuthService } from "./services/authentication.service";
 
 
 const routes:Route[]=[

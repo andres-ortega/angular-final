@@ -1,16 +1,5 @@
-#form-registro{
-    padding-left: 28%;
-}
+#fondo-form{ 
+    background-color: white;
+} 
 
-#centrar{
-    text-align: center;
-}
-
-.estilo-input{
-   
-    border: 2px;
-    border-color: black;
-    border-radius: 5px;
-    background-color: #def;
-}
 

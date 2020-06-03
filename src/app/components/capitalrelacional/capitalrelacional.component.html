@@ -1,102 +1,43 @@
 
-<style>
-    #centrar{
-            text-align: center;
-        }
-    </style>
-    
-    <header>
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="centrar">
-                            <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" routerLink="/paginaprincipal">Página Principal</a>
-                                    <li class="nav-item">
-                                    <a class="nav-link" routerLink="/quienessomos">Quiénes somos</a>
-                                    </li>
-                                    <li class="nav-item">
-                                    <a class="nav-link" routerLink="/capitalhumano">Capital Humano</a>
-                                    </li>
-                                    <li class="nav-item">
-                                    <a class="nav-link" routerLink="/capitalrelacional">Capital Relacional</a>
-
-                                    <li class="nav-item">
-                                    <a class="nav-link" routerLink="/sectores">Información Sectores</a>
-                                    
-                                    <li class="nav-item active">
-                                    <div><a class="nav-link" routerLink="/registro">Registrar Funcionario</a></div>
-                                    
-                                <li class="nav-item active">
-                                <a class="nav-link" routerLink="/login"> Cerrar Sesión</a>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    
-        <section class="textos-header">
-            <h1>Universidad cooperativa de colombia </h1>
-            <h2>Lo mejor para tu bienestar</h2>
-        </section>
-        <div class="wave" style="height: 150px; overflow: hidden;">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;"></path>
-            </svg>
-        </div>
-    </header>
+<!--NAVBAR-->
+<app-navbar></app-navbar>
 
 <main>
     <section class="contenedor sobre-nosotros">
-    <div class="container">
-		<div class="row">
-			<div class="col-md-12">
-        <div id="centrar"> <h2>Capital Relacional</h2></div>
-        <br/>
-				<p style="text-align:justify"> 
-                Ahora que ya conoce la definición de la IA y más de su historia, la mejor forma de profundizar en el tema es conocer las principales técnicas de la IA, específicamente, los casos en los que la Inteligencia artificial se utiliza para los negocios.
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div id="centrar"> 
+                        <h2>Capital Relacional</h2>
+                    </div>
+                    <p id="justificado"> 
+                    Ahora que ya conoce la definición de la IA y más de su historia, la mejor forma de profundizar en el tema es conocer las principales técnicas de la IA, específicamente, los casos en los que la Inteligencia artificial se utiliza para los negocios.
 
-Aprendizaje automático
-Generalmente, el concepto de Aprendizaje automático se confunde con el de “IA débil”. Es en este campo en donde los avances más importantes de la IA se están llevando a cabo. En términos prácticos, “el Aprendizaje automático es la ciencia que se encarga de hacer que las computadoras realicen acciones sin necesidad de programación explícita”. La idea principal aquí es que se les puede proporcionar datos a los algoritmos de Aprendizaje automático y luego usarlos para saber cómo hacer predicciones o guiar decisiones.
+                    Aprendizaje automático
+                    Generalmente, el concepto de Aprendizaje automático se confunde con el de “IA débil”. Es en este campo en donde los avances más importantes de la IA se están llevando a cabo. En términos prácticos, “el Aprendizaje automático es la ciencia que se encarga de hacer que las computadoras realicen acciones sin necesidad de programación explícita”. La idea principal aquí es que se les puede proporcionar datos a los algoritmos de Aprendizaje automático y luego usarlos para saber cómo hacer predicciones o guiar decisiones.
 
-Algunos ejemplos de algoritmos de Aprendizaje automático incluyen los siguientes: diagramas de decisiones, algoritmos de agrupamiento, algoritmos genéticos, redes Bayesianas y Aprendizaje profundo.  
+                    Algunos ejemplos de algoritmos de Aprendizaje automático incluyen los siguientes: diagramas de decisiones, algoritmos de agrupamiento, algoritmos genéticos, redes Bayesianas y Aprendizaje profundo.  
 
-Aprendizaje profundo                                                                                      
-¿Recuerda cuando Google anunció un algoritmo que encontraba videos de gatos en Youtube? (Si desea refrescar su memoria haga clic aquí). Pues bien, esto es Aprendizaje profundo, una técnica de Aprendizaje automático que utiliza redes neuronales (el concepto de que las neuronas se pueden simular mediante unidades computacionales) para realizar tareas de clasificación (piense en clasificar una imagen de un gato, de un perro o personas, por ejemplo).  
+                    Aprendizaje profundo                                                                                      
+                    ¿Recuerda cuando Google anunció un algoritmo que encontraba videos de gatos en Youtube? (Si desea refrescar su memoria haga clic aquí). Pues bien, esto es Aprendizaje profundo, una técnica de Aprendizaje automático que utiliza redes neuronales (el concepto de que las neuronas se pueden simular mediante unidades computacionales) para realizar tareas de clasificación (piense en clasificar una imagen de un gato, de un perro o personas, por ejemplo).  
 
-Algunos ejemplos de aplicaciones prácticas del Aprendizaje profundo son las siguientes: identificación de vehículos, peatones y placas de matrícula de vehículos autónomos, reconocimiento de imagen, traducción y procesamiento de lenguaje natural.  
+                    Algunos ejemplos de aplicaciones prácticas del Aprendizaje profundo son las siguientes: identificación de vehículos, peatones y placas de matrícula de vehículos autónomos, reconocimiento de imagen, traducción y procesamiento de lenguaje natural.  
 
-Descubrimiento de datos inteligentes
-Es el próximo paso en soluciones de IE (Inteligencia empresarial). La idea consiste en permitir la automatización total del ciclo de la IE: la incorporación y preparación de datos, el análisis predictivo y los patrones y la identificación de hipótesis. Este es un ejemplo interesante de la recuperación de datos inteligentes en acción. La información que ninguna herramienta de IE había descubierto.  
-                
-                </p>
+                    Descubrimiento de datos inteligentes
+                    Es el próximo paso en soluciones de IE (Inteligencia empresarial). La idea consiste en permitir la automatización total del ciclo de la IE: la incorporación y preparación de datos, el análisis predictivo y los patrones y la identificación de hipótesis. Este es un ejemplo interesante de la recuperación de datos inteligentes en acción. La información que ninguna herramienta de IE había descubierto.  
+                                    
+                    </p>
                 </div>
-			</div>
-	</div>
+            </div>
+        </div>
 
     </section>
 
 </main>
-<footer>
-    <div class="contenedor-footer">
-        <div class="content-foo">
-            <h4>Phone</h4>
-            <p>Línea gratuita: 018000420101</p>
-        </div>
-        <div class="content-foo">
-            <h4>Email</h4>
-            <p>mercadeo.cal@ucc.edu.co</p>
-        </div>
-        <div class="content-foo">
-            <h4>Location</h4>
-            <p>Cali, Valle del Cauca</p>
-        </div>
-    </div>
-    <h2 class="titulo-final ">&copy; Andrés Felipe Cardenas, Andrés Ortega, Frank Florez, Oscar Florez</h2>
-</footer>
+<br>
+<br>
+
+
+<!--NAVBAR-->
+<app-footer></app-footer>

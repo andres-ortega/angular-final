@@ -10,7 +10,7 @@ padding: 15px;
 
 .formulario{
 background: #fff;
-margin-top: 150px;
+margin-top: 10%;
 padding: 3px;
 }
 h1{
@@ -65,7 +65,7 @@ font-weight: 600;
 .formulario{
     margin: auto;
     width: 500px;
-    margin-top: 150px;
+    margin-top: 10%;
     border-radius: 2%;
 }
 }

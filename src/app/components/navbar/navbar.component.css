@@ -2,6 +2,7 @@
 
 /* HEADER */
 
+/*cambiar de color al pasar el mouse encima*/
 a:hover {
     background-color: rgb(37, 105, 168);
 }
@@ -19,8 +20,8 @@ a:hover {
     text-align: center;
 }
 
-/*RESPONSIVE*/
 
+/*RESPONSIVE*/
 
 @media screen and (max-width:500px){
 

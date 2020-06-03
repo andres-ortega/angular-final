@@ -22,9 +22,11 @@ import { PaginaprincipalComponent } from './components/paginaprincipal/paginapri
 import { RegistroComponent } from './components/registro/registro.component';
 import { InformacionsectoresComponent } from './components/informacionsectores/informacionsectores.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 // Auth service
 import { AuthService } from "./services/authentication.service";
+
 
 
 
@@ -37,6 +39,7 @@ const routes:Route[]=[
   {path: 'paginaprincipal',component: PaginaprincipalComponent},
   {path: 'registro',component: RegistroComponent},
   {path: 'navbar',component: NavbarComponent},
+  {path: 'footer',component: FooterComponent},
   {path: '', component: LoginComponent, pathMatch: 'full' },
   {path: '**', redirectTo: '/', pathMatch: 'full'  },
   
@@ -55,7 +58,8 @@ export const routing = RouterModule.forRoot(routes);
     PaginaprincipalComponent,
     RegistroComponent,
     InformacionsectoresComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

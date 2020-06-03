@@ -21,9 +21,11 @@ import { CapitalrelacionalComponent } from './components/capitalrelacional/capit
 import { PaginaprincipalComponent } from './components/paginaprincipal/paginaprincipal.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { InformacionsectoresComponent } from './components/informacionsectores/informacionsectores.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 // Auth service
 import { AuthService } from "./services/authentication.service";
+
 
 
 const routes:Route[]=[
@@ -34,6 +36,7 @@ const routes:Route[]=[
   {path: 'sectores',component: InformacionsectoresComponent},
   {path: 'paginaprincipal',component: PaginaprincipalComponent},
   {path: 'registro',component: RegistroComponent},
+  {path: 'navbar',component: NavbarComponent},
   {path: '', component: LoginComponent, pathMatch: 'full' },
   {path: '**', redirectTo: '/', pathMatch: 'full'  },
   
@@ -51,7 +54,8 @@ export const routing = RouterModule.forRoot(routes);
     CapitalrelacionalComponent,
     PaginaprincipalComponent,
     RegistroComponent,
-    InformacionsectoresComponent
+    InformacionsectoresComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

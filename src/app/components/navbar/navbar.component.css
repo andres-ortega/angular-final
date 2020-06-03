@@ -1,0 +1,37 @@
+
+
+/* HEADER */
+
+a:hover {
+    background-color: rgb(37, 105, 168);
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+
+/*RESPONSIVE*/
+
+
+@media screen and (max-width:500px){
+
+    .textos-header h1{
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    .textos-header h2{
+        text-align: center;
+        font-size: 15px;
+    }
+    
+}

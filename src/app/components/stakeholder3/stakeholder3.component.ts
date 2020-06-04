@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MostrarService } from '../../services/mostrar.service';
 
 @Component({
   selector: 'app-stakeholder3',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Stakeholder3Component implements OnInit {
 
-  constructor() { }
+  items:any;
+
+  constructor(private Mostrar:MostrarService) { 
+    this.Mostrar.retornaItems().subscribe(items=>{
+      this.items=items;
+      console.log(this.items)
+    });
+  }
 
   ngOnInit() {
   }

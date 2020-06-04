@@ -5,7 +5,7 @@
 <dt *ngFor="let item of items" >
            
     
-    <button name="publico" *ngIf="(item.sector == 'privado')" routerLink="/paginaprincipal" type="submit" class="btn btn-primary btn-lg btn-block" 
+    <button name="publico" *ngIf="(item.sector == 'privado')" routerLink="/stake2" type="submit" class="btn btn-primary btn-lg btn-block" 
     [ngClass]="{'d-none': item.name}" >
         
         {{item.subsector}}

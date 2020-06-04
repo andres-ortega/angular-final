@@ -26,12 +26,16 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SubsectoresComponent } from './components/subsectores/subsectores.component';
 import { Subsectores2Component } from './components/subsectores2/subsectores2.component';
 import { Subsectores3Component } from './components/subsectores3/subsectores3.component';
-
-// Auth service
-import { AuthService } from "./services/authentication.service";
 import { StakeholderComponent } from './components/stakeholder/stakeholder.component';
 import { Stakeholder2Component } from './components/stakeholder2/stakeholder2.component';
 import { Stakeholder3Component } from './components/stakeholder3/stakeholder3.component';
+
+// Auth service
+import { AuthService } from "./services/authentication.service";
+import { InfoComponent } from './components/info/info.component';
+import { Info2Component } from './components/info2/info2.component';
+import { Info3Component } from './components/info3/info3.component';
+
 
 
 
@@ -51,6 +55,9 @@ const routes:Route[]=[
   {path: 'sub',component: SubsectoresComponent},
   {path: 'sub2',component: Subsectores2Component},
   {path: 'sub3',component: Subsectores3Component},
+  {path: 'stake',component: StakeholderComponent},
+  {path: 'stake2',component: Stakeholder2Component},
+  {path: 'stake3',component: Stakeholder3Component},
   {path: '', component: LoginComponent, pathMatch: 'full' },
   {path: '**', redirectTo: '/', pathMatch: 'full'  },
   
@@ -76,7 +83,10 @@ export const routing = RouterModule.forRoot(routes);
     Subsectores3Component,
     StakeholderComponent,
     Stakeholder2Component,
-    Stakeholder3Component
+    Stakeholder3Component,
+    InfoComponent,
+    Info2Component,
+    Info3Component
   ],
   imports: [
     BrowserModule,

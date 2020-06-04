@@ -1,1 +1,21 @@
-<p>stakeholder2 works!</p>
+<!--NAVBAR-->
+<app-navbar></app-navbar> 
+<h1 id="centrar" class="container">SUB-SECTORES</h1>
+
+<dt *ngFor="let item of items" >
+           
+    
+    <button name="publico" *ngIf="(item.sector == 'privado')" routerLink="/stake2" type="submit" class="btn btn-primary btn-lg btn-block" 
+    [ngClass]="{'d-none': item.name}" >
+        
+        {{item.nom_empresa}}
+              
+    </button>
+
+</dt>
+
+
+<br>
+
+<!--FOOTER-->
+<app-footer></app-footer>

@@ -29,12 +29,13 @@ import { Subsectores3Component } from './components/subsectores3/subsectores3.co
 import { StakeholderComponent } from './components/stakeholder/stakeholder.component';
 import { Stakeholder2Component } from './components/stakeholder2/stakeholder2.component';
 import { Stakeholder3Component } from './components/stakeholder3/stakeholder3.component';
-
-// Auth service
-import { AuthService } from "./services/authentication.service";
 import { InfoComponent } from './components/info/info.component';
 import { Info2Component } from './components/info2/info2.component';
 import { Info3Component } from './components/info3/info3.component';
+
+// Auth service
+import { AuthService } from "./services/authentication.service";
+
 
 
 
@@ -58,6 +59,9 @@ const routes:Route[]=[
   {path: 'stake',component: StakeholderComponent},
   {path: 'stake2',component: Stakeholder2Component},
   {path: 'stake3',component: Stakeholder3Component},
+  {path: 'info',component: InfoComponent},
+  {path: 'info2',component: Info2Component},
+  {path: 'info3',component: Info3Component},
   {path: '', component: LoginComponent, pathMatch: 'full' },
   {path: '**', redirectTo: '/', pathMatch: 'full'  },
   

@@ -1,1 +1,37 @@
-<p>info works!</p>
+
+
+  <!--NAVBAR-->
+  <app-navbar></app-navbar> 
+  <h1 id="centrar" class="container">STAKEHOLDERS INFO</h1>
+  
+  <dt *ngFor="let item of items" >
+             
+        <button name="publico" *ngIf="(item.sector == 'publico')" type="button" class="btn btn-primary btn-lg btn-block" 
+        [ngClass]="{'d-none': item.name}" >
+            
+            SECTOR: {{item.sector}} <br>
+            SUBSECTOR: {{item.subsector}} <br>            
+            NOMBRE EMPRESA: {{item.nom_empresa}} <br>
+            <h1>DATOS CONTACTO</h1> 
+            NOMBRE COMPLETO: {{item.nom_completo}} <br>
+            NÚMERO CONTACTO: {{item.num_contacto}} <br>
+            CORREO: {{item.correo}} <br>
+            <h1>Tipo De Acuerdo</h1>
+            ESTADO CONVENIO: {{item.estado_convenio}} <br>
+            INVESTIGACIÓN DE RED: {{item.inv_red}} <br>
+            PROYECTO SOCIAL: {{item.proyec_social}} <br>
+            FINANCIAMIENTO: {{item.financiamiento}} <br>
+            PRÁCTICA EMPRESARIAL: {{item.prec_empresarial}} <br>
+            PLAN DE MEDIOS: {{item.plan_medios}} <br>
+         
+                    
+        </button>
+             
+  
+  </dt>
+  
+  
+  <br>
+  
+  <!--FOOTER-->
+  <app-footer></app-footer>

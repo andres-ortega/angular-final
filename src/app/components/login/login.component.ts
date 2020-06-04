@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   constructor(
     public authService: AuthService
-  ) { }
+  ) { } 
 
   login() {
     console.log(this.email);

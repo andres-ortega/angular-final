@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AgregarService } from 'src/app/services/agregar.service';
 
 @Component({
   selector: 'app-registro',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroComponent implements OnInit {
 
-  constructor() { }
+  item:any={ sector:''};
+  constructor(private serv:AgregarService) { }
 
   ngOnInit() {
+  }
+
+  agregar(){
+    this.serv.addItem(this.item);
   }
 
 }

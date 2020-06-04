@@ -53,10 +53,6 @@ export class AuthService {
     return (user !== null && user.emailVerified !== false) ? true : false;
   }
 
-  // Sign in with Google
-  GoogleAuth() {
-    return this.AuthLogin(new auth.GoogleAuthProvider());
-  }
 
   // Auth logic to run auth providers
   AuthLogin(provider) {
@@ -88,12 +84,5 @@ export class AuthService {
     })
   }
 
-  // Sign out 
-  SignOut() {
-    return this.afAuth.auth.signOut().then(() => {
-      localStorage.removeItem('user');
-      this.router.navigate(['sign-in']);
-    })
-  }
 
 }

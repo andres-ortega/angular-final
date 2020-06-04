@@ -1,13 +1,32 @@
 <!--NAVBAR-->
 <app-navbar></app-navbar> 
+<h1 id="centrar" class="container">SECTORES</h1>
 
+<dt *ngFor="let item of items" >
+    
+        
+    <button *ngIf="(item.sector != 'publico' && item.sector != 'privado' )" routerLink="/sub3" type="submit" class="btn btn-primary btn-lg btn-block" 
+    [ngClass]="{'d-none': item.name}" >
 
-<dt >
-    <button type="button" class="btn btn-primary btn-lg btn-block" [ngClass]="{'d-none': item.sector}" *ngFor="let item of items"  >
-        {{item.name}}
-        <br>
+    {{item.sector}}
+            
+    </button>
+    
+    <button name="publico" *ngIf="(item.sector == 'publico')" routerLink="/sub" type="submit" class="btn btn-primary btn-lg btn-block" 
+    [ngClass]="{'d-none': item.name}" >
+        
+        {{item.sector}}  
+              
+    </button>
+
+    <button *ngIf="(item.sector == 'privado')" routerLink="/sub2" type="submit" class="btn btn-primary btn-lg btn-block" 
+    [ngClass]="{'d-none': item.name}" >
+        
+        {{item.sector}}   
+
     </button>
 </dt>
+
 
 <br>
 

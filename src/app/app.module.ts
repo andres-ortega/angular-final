@@ -23,9 +23,17 @@ import { RegistroComponent } from './components/registro/registro.component';
 import { InformacionsectoresComponent } from './components/informacionsectores/informacionsectores.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SubsectoresComponent } from './components/subsectores/subsectores.component';
+import { Subsectores2Component } from './components/subsectores2/subsectores2.component';
+import { Subsectores3Component } from './components/subsectores3/subsectores3.component';
 
 // Auth service
 import { AuthService } from "./services/authentication.service";
+import { StakeholderComponent } from './components/stakeholder/stakeholder.component';
+import { Stakeholder2Component } from './components/stakeholder2/stakeholder2.component';
+import { Stakeholder3Component } from './components/stakeholder3/stakeholder3.component';
+
+
 
 
 
@@ -40,6 +48,9 @@ const routes:Route[]=[
   {path: 'registro',component: RegistroComponent},
   {path: 'navbar',component: NavbarComponent},
   {path: 'footer',component: FooterComponent},
+  {path: 'sub',component: SubsectoresComponent},
+  {path: 'sub2',component: Subsectores2Component},
+  {path: 'sub3',component: Subsectores3Component},
   {path: '', component: LoginComponent, pathMatch: 'full' },
   {path: '**', redirectTo: '/', pathMatch: 'full'  },
   
@@ -59,7 +70,13 @@ export const routing = RouterModule.forRoot(routes);
     RegistroComponent,
     InformacionsectoresComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    SubsectoresComponent,
+    Subsectores2Component,
+    Subsectores3Component,
+    StakeholderComponent,
+    Stakeholder2Component,
+    Stakeholder3Component
   ],
   imports: [
     BrowserModule,
